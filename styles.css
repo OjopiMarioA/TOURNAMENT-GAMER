@@ -1,0 +1,411 @@
+/* Estilos Globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+.login-body {
+    background-image: url('https://wallpaperaccess.com/full/7445.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    position: relative;
+}
+
+.login-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 100, 255, 0.5);
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+}
+
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+.game-icon {
+    text-align: center;
+    font-size: 40px;
+    color: #0af;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: #0af;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px 15px 15px 45px;
+    border: none;
+    background: rgba(30, 30, 30, 0.7);
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+}
+
+.input-group input::placeholder {
+    color: #aaa;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background: #0af;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background: #08f;
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.login-options a {
+    color: #0af;
+    text-decoration: none;
+}
+
+.login-options a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #ff5555;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Estilos de página de Home y elementos comunes */
+.home-body {
+    background: #0a0a2a;
+    min-height: 100vh;
+    color: white;
+}
+
+.navbar {
+    background: rgba(20, 20, 60, 0.8);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #0af;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a.active, 
+.nav-links a:hover {
+    color: #ff7700;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    margin-right: 15px;
+    color: #0af;
+}
+
+.login-btn-nav {
+    padding: 8px 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
+}
+
+.login-btn-nav:hover {
+    background: #ff7700;
+    border-color: #ff7700;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #1a103f 0%, #4a1a8c 100%);
+    padding: 40px;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.breadcrumb {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.tournament-card {
+    background: rgba(40, 40, 100, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px auto;
+    max-width: 1000px;
+    display: flex;
+    box-shadow: 0 0 20px rgba(0, 100, 255, 0.2);
+}
+
+.tournament-info {
+    padding: 30px;
+    flex: 1;
+}
+
+.tournament-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.countdown {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.time-block {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    min-width: 40px;
+    text-align: center;
+}
+
+.join-btn {
+    background: #ff7700;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.join-btn:hover {
+    background: #ff5500;
+}
+
+.tournament-image {
+    flex: 1;
+    min-height: 200px;
+    background-image: url('https://www.pockettactics.com/wp-content/sites/pockettactics/2023/06/best-pubg-characters-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin: 40px 0 20px;
+}
+
+.tournaments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tournament-item {
+    background: rgba(40, 40, 100, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.tournament-item:hover {
+    transform: translateY(-5px);
+}
+
+.tournament-item-image {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+.tournament-item:nth-child(1) .tournament-item-image {
+    background-image: url('https://cdn.akamai.steamstatic.com/steam/apps/578080/capsule_616x353.jpg');
+}
+
+.tournament-item:nth-child(2) .tournament-item-image {
+    background-image: url('https://cdn2.unrealengine.com/fortnite-chapter-5-season-2-4k-key-art-5000x2813-85a51a04e3f9.jpg');
+}
+
+.tournament-item:nth-child(3) .tournament-item-image {
+    background-image: url('https://cdn1.epicgames.com/offer/24b9b5e323bc40eea252a10cdd3b2f10/LOL_2560x1440-98749e0d718e82d27a084941939bc9d3');
+}
+
+.tournament-item:nth-child(4) .tournament-item-image {
+    background-image: url('https://cdn.akamai.steamstatic.com/steam/apps/730/capsule_616x353.jpg');
+}
+
+.tournament-item-info {
+    padding: 20px;
+}
+
+.tournament-item-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.tournament-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Estilos de página de Brackets */
+.bracket-body {
+    background: #0a3555;
+    min-height: 100vh;
+    color: white;
+    padding-bottom: 40px;
+}
+
+.bracket-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.bracket {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bracket-round {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 10px;
+}
+
+.match {
+    background: #f0f0f0;
+    color: #333;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-weight: bold;
+}
+
+.match::after {
+    content: '';
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    width: 25px;
+    height: 2px;
+    background: #ffaa00;
+}
+
+.bracket-round:last-child .match::after {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tournament-card {
+        flex-direction: column;
+    }
+    
+    .tournament-image {
+        height: 200px;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+    
+    .bracket {
+        flex-direction: column;
+    }
+    
+    .bracket-round {
+        margin-bottom: 30px;
+    }
+    
+    .match::after {
+        display: none;
+    }
+}

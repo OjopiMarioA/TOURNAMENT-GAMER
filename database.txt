@@ -1,0 +1,9 @@
+username,email,password
+admin,admin@tournament.com,admin123
+user1,user1@example.com,password1
+user2,user2@example.com,password2
+player01,player01@gmail.com,gaming123
+proplayer,proplayer@hotmail.com,secure456
+gamerking,gamerking@yahoo.com,champion789
+esports_fan,esports_fan@outlook.com,fan2023
+tournament_master,tournament_master@gmail.com,master2025

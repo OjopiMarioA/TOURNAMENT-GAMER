@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneo Gamer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div id="loginPage" class="page login-body">
+        <div class="login-container">
+            <h1>Inicio de Sesión</h1>
+            <div class="game-icon">
+                <i class="fas fa-gamepad"></i>
+            </div>
+            <form id="loginForm">
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" id="username" placeholder="Usuario o Correo..." required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" placeholder="Contraseña" required>
+                </div>
+                <button type="submit" class="login-btn">INICIAR SESIÓN</button>
+                <div class="login-options">
+                    <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                    <span class="register">¿Nuevo usuario? <a href="#" id="registerLink">¡Regístrate ahora!</a></span>
+                </div>
+            </form>
+            <div id="error-message" class="error-message"></div>
+        </div>
+
+        <div id="registerContainer" class="login-container" style="display: none;">
+            <h1>Crear Nueva Cuenta</h1>
+            <div class="game-icon">
+                <i class="fas fa-user-plus"></i>
+            </div>
+            <form id="registerForm">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="reg-username" placeholder="Nombre de Usuario" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="reg-email" placeholder="Correo Electrónico" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="reg-password" placeholder="Contraseña" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="reg-confirm-password" placeholder="Confirmar Contraseña" required>
+                </div>
+                <button type="submit" class="login-btn">REGISTRARSE</button>
+                <div class="login-options">
+                    <a href="#" id="backToLoginLink">Volver al inicio</a>
+                </div>
+            </form>
+            <div id="register-message" class="error-message"></div>
+        </div>
+    </div>
+
+    <div id="homePage" class="page home-body" style="display: none;">
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                TORNEO GAMER
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" id="homeLink" class="active">INICIO</a></li>
+                <li><a href="#" id="tournamentsLink">TORNEOS</a></li>
+                <li><a href="#" id="bracketsLink">POSICIONES</a></li>
+                <li><a href="#" id="contactLink">CONTACTO</a></li>
+            </ul>
+            <div class="user-actions">
+                <span id="welcomeUser" class="username">Bienvenido</span>
+                <a href="#" id="logoutBtn" class="login-btn-nav">CERRAR SESIÓN</a>
+            </div>
+        </nav>
+
+        <div class="hero-section">
+            <h1 class="hero-title">TORNEOS</h1>
+            <div class="breadcrumb">Inicio > Torneos</div>
+        </div>
+
+        <div class="tournament-card">
+            <div class="tournament-info">
+                <h2 class="tournament-title">LEADER CUP #7</h2>
+                <div class="countdown">
+                    <div class="time-block">22</div>
+                    <div class="time-block">19</div>
+                    <div class="time-block">22</div>
+                    <div class="time-block">10</div>
+                </div>
+                <button class="join-btn">UNIRSE AHORA</button>
+            </div>
+            <div class="tournament-image"></div>
+        </div>
+
+        <h2 class="section-title">EXPLORAR TORNEOS</h2>
+        
+        <div class="tournaments-grid">
+            <div class="tournament-item">
+                <div class="tournament-item-image"></div>
+                <div class="tournament-item-info">
+                    <h3 class="tournament-item-title">Campeonato de Invierno PUBG</h3>
+                    <div class="tournament-meta">
+                        <span><i class="fas fa-users"></i> 64 jugadores</span>
+                        <span><i class="fas fa-trophy"></i> $1000</span>
+                    </div>
+                    <button class="join-btn">UNIRSE AHORA</button>
+                </div>
+            </div>
+            
+            <div class="tournament-item">
+                <div class="tournament-item-image"></div>
+                <div class="tournament-item-info">
+                    <h3 class="tournament-item-title">Fortnite Battle Royale</h3>
+                    <div class="tournament-meta">
+                        <span><i class="fas fa-users"></i> 100 jugadores</span>
+                        <span><i class="fas fa-trophy"></i> $2500</span>
+                    </div>
+                    <button class="join-btn">UNIRSE AHORA</button>
+                </div>
+            </div>
+            
+            <div class="tournament-item">
+                <div class="tournament-item-image"></div>
+                <div class="tournament-item-info">
+                    <h3 class="tournament-item-title">Copa League of Legends</h3>
+                    <div class="tournament-meta">
+                        <span><i class="fas fa-users"></i> 32 equipos</span>
+                        <span><i class="fas fa-trophy"></i> $5000</span>
+                    </div>
+                    <button class="join-btn">UNIRSE AHORA</button>
+                </div>
+            </div>
+            
+            <div class="tournament-item">
+                <div class="tournament-item-image"></div>
+                <div class="tournament-item-info">
+                    <h3 class="tournament-item-title">CS:GO Masters</h3>
+                    <div class="tournament-meta">
+                        <span><i class="fas fa-users"></i> 16 equipos</span>
+                        <span><i class="fas fa-trophy"></i> $3500</span>
+                    </div>
+                    <button class="join-btn">UNIRSE AHORA</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="bracketsPage" class="page bracket-body" style="display: none;">
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                TORNEO GAMER
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" id="homeLink2">INICIO</a></li>
+                <li><a href="#" id="tournamentsLink2">TORNEOS</a></li>
+                <li><a href="#" id="bracketsLink2" class="active">POSICIONES</a></li>
+                <li><a href="#" id="contactLink2">CONTACTO</a></li>
+            </ul>
+            <div class="user-actions">
+                <span id="welcomeUser2" class="username">Bienvenido</span>
+                <a href="#" id="logoutBtn2" class="login-btn-nav">CERRAR SESIÓN</a>
+            </div>
+        </nav>
+
+        <div class="hero-section">
+            <h1 class="hero-title">LLAVES DEL TORNEO</h1>
+            <div class="breadcrumb">Inicio > Torneos > Posiciones</div>
+        </div>
+
+        <div class="bracket-container">
+            <div class="bracket">
+                <div class="bracket-round">
+                    <div class="match">Equipo 1</div>
+                    <div class="match">Equipo 2</div>
+                    <div class="match">Equipo 3</div>
+                    <div class="match">Equipo 4</div>
+                    <div class="match">Equipo 5</div>
+                    <div class="match">Equipo 6</div>
+                    <div class="match">Equipo 7</div>
+                    <div class="match">Equipo 8</div>
+                </div>
+                
+                <div class="bracket-round">
+                    <div class="match">Cuartos 1</div>
+                    <div class="match">Cuartos 2</div>
+                    <div class="match">Cuartos 3</div>
+                    <div class="match">Cuartos 4</div>
+                </div>
+                
+                <div class="bracket-round">
+                    <div class="match">Semifinal 1</div>
+                    <div class="match">Semifinal 2</div>
+                </div>
+                
+                <div class="bracket-round">
+                    <div class="match">Final</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
